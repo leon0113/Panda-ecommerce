@@ -8,13 +8,15 @@
     <title>Panda E-commerce</title>
     <!------------------------ Linking css ---------------------------------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <!-------------------------- Navbar staring---------------------------- -->
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light mx-75">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mx-75 fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="images/logo.png" alt="">
@@ -26,16 +28,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shoes</a>
+                                <a class="nav-link" href="#shoes">Shoes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Backpack</a>
+                                <a class="nav-link" href="#backpack">Backpack</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Subscribe</a>
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
                             </li>
 
                         </ul>
@@ -45,17 +47,17 @@
         </div>
         <!-------------------------- Navbar end---------------------------- -->
         <!-------------------------- Image slider start---------------------------- -->
-        <div class="container mt-5">
+        <div class="container mt-5" id="home">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row bg-info p-4 d-flex align-items-center">
+                        <div class="row info-back p-4 d-flex align-items-center">
                             <div class="col-lg-7">
                                 <h1>Mega LCD TV For Sports</h1>
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                     tv.</p>
                                 <h1>120$</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="btn custom-button">Buy Now >></button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -65,13 +67,13 @@
 
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-info p-4 d-flex align-items-center">
+                        <div class="row info-back p-4 d-flex align-items-center">
                             <div class="col-lg-7">
                                 <h1>Mega LCD TV For Sports</h1>
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                     tv.</p>
                                 <h1>1200$</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="btn custom-button">Buy Now >></button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -79,13 +81,13 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-info p-4 d-flex align-items-center">
+                        <div class="row info-back p-4 d-flex align-items-center">
                             <div class="col-lg-7">
                                 <h1>Mega LCD TV For Sports</h1>
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                     tv.</p>
                                 <h1>200$</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="btn custom-button">Buy Now >></button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -109,7 +111,7 @@
     </header>
     <main>
         <!--------------------------- categories star--------------------------------------- -->
-        <section class="container mt-5">
+        <section class="container mt-5 categories">
             <div class="overflow-hidden">
                 <div class="row gx-5">
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -134,10 +136,122 @@
             </div>
 
         </section>
-        <!--------------------------- categories star--------------------------------------- -->
-    </main>
-    <footer>
+        <!--------------------------- categories end-------------------------------------- -->
+        <!-- Shoe showcase star--------------------------------------- -->
+        <section class="container mt-5" id="shoes">
+            <h2>Shoes</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Panda 360</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, temporibus!
+                                to additional.</p>
+                        </div>
+                        <div class="m-4">
+                            <button class="btn custom-button">Buy Now >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Addidas 360</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, necessitatibus?
+                                to additional.</p>
+                        </div>
+                        <div class="m-4">
+                            <button class="btn custom-button">Buy Now >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike 360</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, perferendis?
+                                to additional.</p>
+                        </div>
+                        <div class="m-4">
+                            <button class="btn custom-button">Buy Now >></button>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <!-- Shoe showcase end--------------------------------------- -->
+        <!-- Bags showcase start--------------------------------------- -->
+        <section class="container mt-5" id="backpack">
+            <h2>Bags</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, temporibus!
+                                to additional.</p>
+                        </div>
+                        <div class="m-4">
+                            <button class="btn custom-button">Buy Now >> >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, necessitatibus?
+                                to additional.</p>
+                        </div>
+                        <div class="m-4">
+                            <button class="btn custom-button">Buy Now >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, perferendis?
+                                to additional.</p>
+                        </div>
+                        <div class="m-4">
+                            <button class="btn custom-button">Buy Now >></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Bags showcase end--------------------------------------- -->
+        <!-- Subscription star--------------------------------------- -->
+        <section style="height: 300px;"
+            class="container mt-5 info-back d-flex justify-content-center align-items-center rounded-3" id="subscribe">
+            <div>
+                <h1 class="">LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input type="text" placeholder="Your Email"> <br>
+                <button class="btn custom-button mt-2">Submit</button>
+            </div>
+        </section>
+        <!-- Subscription end--------------------------------------- -->
+    </main>
+    <footer class="mt-5">
+        <p class="text-center"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
+        </p>
     </footer>
 
 
